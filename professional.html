@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Professional</title>
+    <style>
+        body{
+            margin:0;
+            background-color: #F6F5F4;
+            min-height: 100vh;
+            padding-bottom: 30px;
+            overflow-x: hidden;
+          }
+        p4, p5 {
+          line-height: 2.5;
+        }
+        p1 {
+          line-height: 1.5;
+        }
+        .header {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background-color: #A3B18A;
+        }
+        .nav {
+            position:absolute;
+            top:0;
+            right:0;
+        }
+        .nav li {
+      font-size:larger;
+      list-style:none;
+      float: left;
+      margin-left: 20px;
+      position:relative;
+    }
+    .nav a {
+      display: block;
+      color: #4C4642;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+    .nav a:hover {
+      background-color: transparent;
+    }
+    .nav li ul {
+      display: none; /* Initially hide the dropdown */
+      position: absolute;
+      top: 100%; /* Align the dropdown under the parent item */
+      left: 0;
+      background-color: #D6CFCB;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: justify;
+      } 
+      /* Dropdown items */
+      .nav li ul li {
+        float: none; /* Make dropdown items stack vertically */
+      }
+
+      .nav li ul li a {
+        padding: 0px 20px;
+        min-width: 100px; 
+        color: #4C4642;
+        white-space: nowrap; /* Prevents text from wrapping */
+      }
+      .nav li ul li a:hover {
+        background-color: #D6CFCB;
+      }
+      /* Show the dropdown on hover */
+      .nav li:hover ul {
+        display: block;
+      }
+    .circle img{
+      position: relative;
+      border: 8px dotted #D6CFCB;
+      display: block;
+      border-radius: 100%;
+      width: 230px; /*adjust as necessary*/
+      height: 230px; 
+      overflow: hidden;
+      object-fit:cover;
+      object-position: center;
+      float:left;
+      margin:5px;
+      top: 100px;
+      padding: 25px;
+    } 
+    .p1 {
+      position: relative;
+      font-size:110%;
+      width:fit-content;
+      color: #4C4642;
+      text-align:left;
+      top: 185px;
+      left:5px;
+    }
+    .text-container {
+      float: left; /* Add this to make the text-container float to the left */
+      position: relative; /* Add this to move the text-container below the nav */
+      right: 10%;
+      top: 400px; /* Move the text-container below the nav */
+      font-size:larger;
+      width:500px;
+      height: 400px;
+      border:1px solid #D6CFCB; /* Add a border to make the text-container visible */
+      border-radius: 10px;
+      background: linear-gradient(135deg, #A3B18A 0%, #588157 100%); 
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      background-color: #D6CFCB;
+      overflow: visible;
+    }
+    .text-container2 {
+      float: left; /* Add this to make the text-container2 float to the right */
+      position: relative; /* Add this to move the text-container2 below the nav */
+      top: 400px; /* Move the text-container2 below the nav */
+      font-size:larger;
+      width:500px;
+      height: 400px;
+      border:1px solid #D6CFCB; /* Add a border to make the text-container2 visible */
+      border-radius: 10px;
+      background: linear-gradient(135deg, #A3B18A 0%, #588157 100%); 
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      background-color: #D6CFCB;
+      text-align: right;
+      overflow: visible;
+    } 
+    .text-container::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 40px;
+      height: 40px;
+      background-color: #588157; /* Matches background for contrast */
+      border-radius: 50%;
+      opacity: 0.7;
+    }
+    .text-container2::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 40px;
+      height: 40px;
+      background-color: #588157; /* Matches background for contrast */
+      border-radius: 50%;
+      opacity: 0.7;
+    }
+    .text-container, .text-container2 {
+      flex:1;
+      margin: 20px;
+    }
+    .education {
+      position: relative;
+      float: left;
+      top: 480px;
+      font-size:larger;
+      text-align:left;
+      margin: 20px;
+    } 
+    .experiences {
+      float:right;
+      clear: right;
+      top: 230px;
+      position:relative;
+      font-size:larger;
+      text-align:right;
+      margin: 20px;
+    }
+    .skills {
+      position: relative;
+      float:left;
+      clear: left;
+      top: 500px;
+      font-size:larger;
+      text-align:left;
+      margin: 20px;
+      margin-bottom: 20px;
+    } 
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+  <div class="nav">
+    <ul>
+      <b><li><a href="./">HOME</a></li></b>
+      <b>
+        <li><a href="./professional">PROFESSIONAL</a>
+          <ul>
+            <li><a href="./overview">OVERVIEW</a></li>
+          </ul>
+        </li>
+      </b>
+      <b><li><a href="./personality">PERSONALITY</a></li></b>
+      <b><li><a href="./development">PERSONAL DEVELOPMENT</a></li></b>
+    </ul>
+  </div>
+  <div class="circle img">
+    <img src="Assets/me2.jpg" alt="Kelsey Clarke" class="circle" onclick="window.location='mailto:kelsey.clarke213@gmail.com?subject=ID:2306678'" style="cursor: pointer;">
+  </div>
+  <div class="p1">
+    <p1>Detail-oriented and organized individual with experience in data entry, graphic design, and administrative support. Skilled in using ms suite, google suite, and online design tools to create impactful visuals and manage data. Passionate about leveraging analytical skills and creativity to drive efficient processes and enhance productivity. Proven ability to work collaboratively and independently, with a strong commitment to delivering quality results. Currently pursuing opportunities to further develop expertise in data analysis and contribute to data-driven decision-making.You can explore this page to know more about me and my profissional vision as a student who's currently pursing a bachelor of science in Computer Information Systems (CIS).</p1>
+  </div>
+  <div class="text-container">
+    <b><p2>MISSION STATEMENT</p2></b> <br><br>
+    <p4>My mission is to harness the power of data to uncover hidden patterns, inspire innovative solutions, and enhance operational efficiency. With a blend of creativity and technical expertise, I aim to provide insightful, actionable analytics that empower businesses to make data-driven decisions. I am dedicated to continuous learning, refining my skills, and delivering high-impact results that drive success and transformation</p4>
+  </div>
+  <div class="text-container2">
+    <b><p3>VISION STATEMENT</p3></b> <br><br>
+    <p5>My vision is to become a leading force in the world of data analysis, where I transform complex data into compelling stories that shape strategic business directions. I aspire to pioneer data-driven solutions that not only optimize processes but also unlock new opportunities for growth and innovation. Through my work, I seek to be a trusted expert, helping organizations thrive in an increasingly data-centric world.</p5>
+  </div>
+  <div class="education">
+    <b><p6>EDUCATION</p6></b> <br>
+    <p7>2023-present</p7> <br> 
+    <p7><b>UNIVERSITY OF TECHNOLOGY, JAMAICA</b></p7> <br>  
+    <p7>Bachelor of Science in Computer Information Systems</p7><br><br> 
+
+    <p7>2022-2023</p7> <br> 
+    <p7><b>INSTITUTE OF ADVANCED PLACEMENT</b></p7> <br><br>
+
+    <p7>2017-2020</p7> <br> 
+    <p7><b>ARDENNE PREPARATORY & EXTENSION HIGH SCHOOL</b></p7>
+  </div>
+
+  <div class="skills">
+    <b><p8>SKILLS</p8></b> <br>
+    <p9>Proficient in MS Office(Word, Excel, PowerPoint)</p9> <br>
+    <p9>Proficient in Google Suite (Docs, Presentation, Sheets)</p9>
+    <p9>Data Entry</p9>
+    <p9>Graphic Design</p9>
+  </div>
+
+  <div class="experiences">
+    <b><p10>EXPERIENCES</p10></b> <br>
+    <p11>2022 (Grahphic Designer)</p11> <br>
+    <p11><b>FREELANCE</b> <br><br></p11>
+    <p11>2018 & 2022-2023 (Volunteer)</p11> <br>
+    <p11><b>JAMAICA LIBRARY SERVICE, MAY PEN</b></p11> <br><br>
+    2018-2020 (Secretary) <br>
+   <p11> <b>UNESCO CLUB, ARDENNE EXTENSION</b> </p11>
+  </div>
+</body>
+</html>

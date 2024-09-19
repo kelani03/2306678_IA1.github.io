@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personality</title>
+    <style>
+        body{
+          margin:0;
+          background-color: #F6F5F4;
+          min-height: 100vh;
+          padding-bottom: 30px;
+          overflow-x: hidden;
+        }
+        p1, p2 {
+          line-height: 2.5;
+        }
+        .header {
+          position:absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 20px;
+          background-color: #A3B18A;
+        }
+        .nav {
+          position:absolute;
+          top:0;
+          right:0;
+        }
+        .nav li {
+          font-size:larger;
+          list-style:none;
+          float: left;
+          margin-left: 20px;
+          position: relative;
+        }
+        .nav a {
+          display: block;
+          color: #4C4642;
+          text-align: center;
+          padding: 16px;
+          text-decoration: none;
+        }
+        .nav a:hover {
+          background-color: transparent;
+        }
+        .nav li ul {
+            display: none; /* Initially hide the dropdown */
+            position: absolute;
+            top: 100%; /* Align the dropdown under the parent item */
+            left: 0;
+            background-color: #D6CFCB;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            z-index: 1;
+        } 
+      /* Dropdown items */
+        .nav li ul li {
+            float: none; /* Make dropdown items stack vertically */
+        }
+
+        .nav li ul li a {
+            padding: 0px 20px;
+            min-width: 100px; 
+            color: #4C4642;
+            white-space: nowrap; /* Prevents text from wrapping */
+        }
+        .nav li ul li a:hover {
+            background-color: #D6CFCB;
+        }
+        /* Show the dropdown on hover */
+        .nav li:hover ul {
+            display: block;
+        }
+      .h1 {
+        position: relative;
+        font-size:200%;
+        width:fit-content;
+        color: #4C4642;
+        text-align:left;
+        top: 50px;
+        left:5px;
+      } 
+      .content {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .text-container {
+        float: left; /* Add this to make the text-container float to the left */
+        position: relative; /* Add this to move the text-container below the nav */
+        top: 20px; /* Move the text-container below the nav */
+        font-size:larger;
+        width:500px;
+        height: 950px;
+        border:1px solid #D6CFCB; /* Add a border to make the text-container visible */
+        border-radius: 10px;
+        background: linear-gradient(135deg, #A3B18A 0%, #588157 100%); 
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        background-color: #D6CFCB;
+        color: #4c4642;
+        overflow: visible;
+      }
+      .text-container2 {
+        float: right; /* Add this to make the text-container2 float to the right */
+        position: relative; /* Add this to move the text-container2 below the nav */
+        top: 20px; /* Move the text-container2 below the nav */
+        font-size:larger;
+        width:500px;
+        height: 950px;
+        border:1px solid #D6CFCB; /* Add a border to make the text-container2 visible */
+        border-radius: 10px;
+        background: linear-gradient(135deg, #A3B18A 0%, #588157 100%); 
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        background-color: #D6CFCB;
+        color: #4c4642;
+        text-align: right;
+        overflow: visible;
+      }
+      .text-container::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 40px;
+      height: 40px;
+      background-color: #588157; /* Matches background for contrast */
+      border-radius: 50%;
+      opacity: 0.7;
+    }
+    .text-container2::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 40px;
+      height: 40px;
+      background-color: #588157; /* Matches background for contrast */
+      border-radius: 50%;
+      opacity: 0.7;
+    }
+      .text-container, .text-container2 {
+        flex:1;
+        margin: 20px;
+      }
+      .education {
+        position: relative;
+        float: left;
+        top: 480px;
+        font-size:larger;
+        text-align:left;
+        margin: 20px;
+      } 
+      .experiences {
+        float:right;
+        clear: right;
+        top: 230px;
+        position:relative;
+        font-size:larger;
+        text-align:right;
+        margin: 20px;
+      }
+      .skills {
+        position: relative;
+        float:left;
+        clear: left;
+        top: 500px;
+        font-size:larger;
+        text-align:left;
+        margin: 20px;
+        margin-bottom: 20px;
+      } 
+      .footer {
+        text-align: center;
+        margin-top: 1010px;
+      }
+      .footer button {  
+        background-color: #A3B18A;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: large;
+        color: #4c4642;
+        font-family: 'Times New Roman', Times, serif;
+        cursor: pointer;
+      }
+      .footer button:hover {
+        background-color: #588157;
+      }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+  <div class="nav">
+    <ul>
+      <ul>
+        <b><li><a href="./">HOME</a></li></b>
+        <b>
+          <li><a href="./professional">PROFESSIONAL</a>
+            <ul>
+              <li><a href="./overview">OVERVIEW</a></li>
+            </ul>
+          </li>
+        </b>
+        <b><li><a href="./personality">PERSONALITY</a></li></b>
+        <b><li><a href="./development">PERSONAL DEVELOPMENT</a></li></b>
+    </ul>
+  </div>
+  <div class="h1">
+    <h1>learn a little about me. . .</h1>
+  </div>
+  <div class="text-container">
+    <p1>Anxiety has been my constant companion since childhood, significantly impacting my academic life, especially at university. It often prevents me from attending face-to-face classes, making learning more challenging as I miss out on valuable information and must catch up independently. This struggle transforms my university experience into something far removed from the carefree, social atmosphere depicted in media. However, anxiety has an unexpected silver lining. By limiting my social engagements, it provides me with ample time to focus on assignments and coursework. While my peers might be distracted by social activities or endless social media scrolling, I find myself with fewer distractions, allowing for more concentrated study time. This duality of anxiety - as both a hindrance and an inadvertent aid to my academic performance - creates a complex relationship with my education. It forces me to question whether the potential academic benefits outweigh the social and personal growth I might be missing. Ultimately, anxiety remains a significant force in shaping my university experience, for better and for worse.</p1>
+  </div>
+  <div class="text-container2">
+    <p2>As I reflect on my journey with anxiety, I'm reminded of someone who embodies the calm and resilience I aspire to achieve: my father. While anxiety has been a double-edged sword in my life, my father stands as a beacon of strength and composure. As a single father, he navigated the challenges of raising a difficult child - me - with a level head and clear mind, even when faced with significant obstacles. I witnessed his unwavering stability during a particularly trying year-long period, marveling at his ability to maintain composure when I knew it couldn't have been easy.
+      My father's approach to life is summed up in his own words: "Nothing bothers me; I don't allow it to." This mindset, so different from my own tendency to overthink, is something I deeply admire and hope to emulate one day. His ability to control his reactions to stress and maintain inner peace is a skill I'm still struggling to master.
+      One of his favorite quotes encapsulates this philosophy: "Don't spend your time pushing boulders uphill...flow like the stream." This wisdom stands in stark contrast to my own experience with anxiety, where even simple tasks like attending a lecture can feel like pushing a boulder uphill.</p2>
+  </div> 
+  <div class="footer">
+    <a href="./personalty overiew"><button><b>NEXT</b></button></a>
+  </div>
+</body>
+</html>

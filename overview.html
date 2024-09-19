@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Analyst Overview</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #F6F5F4;
+            overflow-x: hidden; /* add this rule to prevent horizontal scrolling */
+        }
+        .header {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:20px;
+            background-color: #A3B18A;
+        }
+        .nav {
+            position:absolute;
+            top: 0;
+            right:0;
+        }
+        .nav li {
+            font-size:larger;
+            list-style:none;
+            float:left;
+            margin-left:20px;
+            margin-right:20px;
+            position:relative;
+        }
+        .nav a {
+            display:block;
+            color: #4c4642;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: transparent;
+        } 
+        .nav li ul {
+            display: none; /* Initially hide the dropdown */
+            position: absolute;
+            top: 100%; /* Align the dropdown under the parent item */
+            left: 0;
+            background-color: #D6CFCB;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            z-index: 1;
+        } 
+      /* Dropdown items */
+        .nav li ul li {
+            float: none; /* Make dropdown items stack vertically */
+        }
+
+        .nav li ul li a {
+            padding: 0px 20px;
+            min-width: 100px; 
+            color: #4c4642;
+            white-space: nowrap; /* Prevents text from wrapping */
+        }
+        .nav li ul li a:hover {
+            background-color: #D6CFCB;
+        }
+        /* Show the dropdown on hover */
+        .nav li:hover ul {
+            display: block;
+        }
+        .line1 {
+            border-top: 5px solid #D6CFCB;
+            width: 100%;
+            margin: 60px 0;
+            top:60px;
+
+        }
+        .image-container {
+            position:absolute;
+            border: 5px solid #D6CFCB;
+            top: 60px;
+            left:auto;
+            max-width: 100%; /* add this rule to prevent the image from overflowing */
+            margin: 0 auto; /* center the image container */
+        }
+        .image-container img {
+            display: block;
+        }
+        h2 {
+            position: relative;
+            width: 700px;
+            color: #4c4642;
+            font-size: 50px;
+            text-align: right;
+            top: 5%;
+            left: 40.5%;
+            overflow:visible;
+        }
+        .line2 {
+            border-top: 5px solid #D6CFCB;
+            width: 100%;
+            margin: 60px 0;
+            top:80px;
+
+        }
+        ul {
+            line-height:0.7;
+        }
+        .skills {
+            float:left;
+            clear: left;
+            top: 35%;
+            position:absolute;
+            font-size:large;
+            text-align:left; 
+            left: 32%;
+            color: #4c4642;
+        }
+        .learn-more {
+            position: relative;
+            display: inline-block;
+            border: 6px solid #A3B18A;
+            background-color: #A3B18A;
+            margin-left: 32%;
+            text-align:center;
+            margin-top: 320px;
+            color: #4c4642;
+        }
+        .line3 {
+            border-top: 5px solid #D6CFCB;
+            width: 100%;
+            margin: 0 auto;
+            clear: both;
+            margin-top:20px;
+        }
+        .qualifications {
+            top:95%;
+            position:absolute;
+            float: left;
+            clear: left;
+            font-size: larger;
+            text-align: left;
+            left: 32%;   
+            color: #4c4642;     
+        }
+        .line4 {
+            border-top: 5px solid #D6CFCB;
+            width: 100%;
+            margin: 0 auto;
+            clear: both;
+            margin-top:230px;
+        }
+        .job-responsabilities {
+            top:auto;
+            position: relative;
+            float: left;
+            clear: left;
+            font-size: larger;
+            text-align: left;
+            left: 32%;
+            color: #4c4642;
+        }
+        .line5 {
+            border-top: 5px solid #D6CFCB;
+            width: 100%;
+            margin: 0 auto;
+            clear:both;
+            position: absolute;
+            top: 1065px; /* adjust this value to match the image height */
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="nav">
+        <ul>
+            <b><li><a href="./">HOME</a></li></b>
+            <b>
+              <li><a href="./professional">PROFESSIONAL</a>
+                <ul>
+                  <li><a href="./overview">OVERVIEW</a></li>
+                </ul>
+              </li>
+            </b>
+            <b><li><a href="./personality">PERSONALITY</a></li></b>
+            <b><li><a href="./development">PERSONAL DEVELOPMENT</a></li></b>
+        </ul>
+    </div>
+    <div class="line1"></div>
+    <div class="image-container">
+        <img src="Assets/img1.jpg" alt="Image of desk" width="436" height="1000">
+    </div>
+    <div class="h2">
+        <b><h2>DATA ANALYST OVERVIEW</h2></b>
+    </div>
+    <div class="line1"></div> 
+    <div class="skills">
+        <b><p1>SKILLS</p1></b> <br>
+        <ul>
+            <li><b><p1>Data Tools</p1></b></li> <br>
+            <p1>Proficient in Excel, SQL, and data visualization tools like POWER BI.</p1> <br><br>
+
+            <li><b><p1>Programming Languages</p1></b></li> <br>
+            <p1>Knowledge of Python or R for data manipulation and analysis.</p1> <br><br>
+
+            <li><b><p1>Statistical Knowledge</p1></b> </li><br>
+            <p1>Understanding of deceptive statistics, hypothesis testing and predictive modeling.</p1> <br><br>
+
+            <li><b><p1>Data Cleaning</p1></b></li> <br>
+            <p1>Skilled in data preparation and cleaning to ensure accuracy.</p1> <br><br>
+
+            <li><b><p1>Communication</p1></b></li> <br>
+            <p1>Ability to translate complex data insights into simple, actionable reports for non-technical stakeholders.</p1> <br><br>
+
+            <li><b><p1>Attention to Detail</p1></b></li> <br>
+            <p1>Ensuring high accuracy when analyzing and interpreting data.</p1>  
+        </ul>
+    </div>
+    <div class="learn-more">
+        <a href="https://www.youtube.com/watch?v=T3KMZoXrVTQ&ab_channel=AlexTheAnalyst">
+            <b><p1>LEARN MORE</p1></b>
+        </a>
+    </div>
+    <div class="line3"></div> 
+    <div class="qualifications">
+        <b><p2>QUALIFICATIONS</p2></b> <br>
+        <ul>
+            <li><b><p2>Education</p2></b></li> <br>
+            <p2>Bachelor's degree in Data Science, Statistics, Computer Science, or in a related field.</p2> <br><br>
+            
+            <li><b><p2>Certifications</p2></b></li> <br>
+            <p2>Optional certifications such as Google Data Analytics, Professional Certificate, IBM Data Science Professional Certificate.</p2> <br><br>
+            <li><b><p2>Experience</p2></b></li> <br>
+            <p2>Entry-level positions may require internships or volunteer work involving data entry, analysis and reporting.</p2>
+        </ul>
+    </div>
+    <div class="line4"></div>
+    <div class="job-responsabilities">
+        <b><p3>JOB RESPONSIBILITIES</p3></b> <br>
+        <ul>
+            <li><p3>Collect, clean, and analyze large datasets to uncover trends and insights.</p3></li> <br>
+            <li><p3>Build interactive dashboards and reports to support decision-making.</p3></li> <br>
+            <li><p3>Collaborate with teams to ensure data integrity and availability.</p3></li> <br>
+            <li><p3>Present findings to key stakeholders and provide data-driven recommendations.</p3></li>
+        </ul>
+    </div>
+    <div class="line5"></div>
+</body>
+</html>

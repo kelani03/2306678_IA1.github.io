@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <style>
+    body {
+      margin: 0; /* remove default margin */
+      background-color: #F6F5F4; /* set background color */
+    }
+    .header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      background-color: #A3B18A;
+    }
+    .nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .nav li {
+      font-size:larger;
+      list-style:none;
+      float: left;
+      margin-left: 20px;
+      position:relative;
+    }
+    .nav a {
+      display: block;
+      color: #4C4642;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+    .nav a:hover {
+      background-color: transparent;
+    } 
+    .nav li ul {
+      display: none; /* Initially hide the dropdown */
+      position: absolute;
+      top: 100%; /* Align the dropdown under the parent item */
+      left: 0;
+      background-color: #D6CFCB;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    } 
+      /* Dropdown items */
+    .nav li ul li {
+      float: none; /* Make dropdown items stack vertically */
+    }
+  .nav li ul li a {
+      padding: 0px 20px;
+      min-width: 100px; /* You can adjust this value or remove it */
+      color: #4C4642;
+      white-space: nowrap; /* Prevents text from wrapping */
+    }
+    .nav li ul li a:hover {
+      background-color: #D6CFCB;
+    }
+      /* Show the dropdown on hover */
+    .nav li:hover ul {
+      display: block;
+    }
+    /* Add this CSS rule to position the image */
+    .image-container {
+      border: 15px dotted #D6CFCB;
+      position: absolute;
+      top: 100px; /* adjust this value to move the image down */
+      right: 120px; /* adjust this value to move the image to the right */
+    }
+    .h2 {
+      width: 800px;
+      height: 250px;
+      color: #4C4642;
+      font-size: 280%;
+      text-align: left;
+      padding-left: 3.5%;
+      margin-top: 10%;
+      overflow:visible;
+    }
+  </style>
+</head>
+<body>
+  <div class="header"></div>
+  <div class="nav">
+    <ul>
+      <b><li><a href="./">HOME</a></li></b>
+      <b>
+        <li><a href="./professional">PROFESSIONAL</a>
+          <ul>
+            <li><a href="./overview">OVERVIEW</a></li>
+          </ul>
+        </li>
+      </b>
+      <b><li><a href="./personality">PERSONALITY</a></li></b>
+      <b><li><a href="./development">PERSONAL DEVELOPMENT</a></li></b>
+    </ul>
+  </div>
+  <div class="image-container">
+    <a href="mailto:kelsey.clarke213@gmail.com?subject=ID:2306678">
+      <img src="Assets/me2.jpg" alt="Kelsey Clarke" width="auto" height="500" /> </a>
+  </div>
+  <div class="h2">
+    <h2>Hi, my name is Kelsey Clarke, and I'm currently a second year CIS student at the University of Technolgy, Jamaica.</h2>
+  </div>
+</body>
+</html>
